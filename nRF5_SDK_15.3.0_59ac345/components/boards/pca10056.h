@@ -1,5 +1,5 @@
 /**
- * Copyright (c) 2016 - 2019, Nordic Semiconductor ASA
+ * Copyright (c) 2016 - 2020, Nordic Semiconductor ASA
  *
  * All rights reserved.
  *
@@ -40,6 +40,8 @@
 #ifndef PCA10056_H
 #define PCA10056_H
 
+#define SMART_JERSEY_REV_E
+
 #ifdef __cplusplus
 extern "C" {
 #endif
@@ -49,8 +51,39 @@ extern "C" {
 // LEDs definitions for PCA10056
 #define LEDS_NUMBER    4
 
+#ifdef SMART_JERSEY_REV_E
+
+#define V_DIV_BAT					NRF_GPIO_PIN_MAP(0, 2)
+#define EN_5P0						NRF_GPIO_PIN_MAP(0, 30)
+#define PGn_VBAT					NRF_GPIO_PIN_MAP(0, 31)
+#define VIB_EN						NRF_GPIO_PIN_MAP(0, 13)
+		
+#define LED_BLUE					NRF_GPIO_PIN_MAP(0, 3)
+#define LED_GREEN					NRF_GPIO_PIN_MAP(0, 5)
+#define LED_RED						NRF_GPIO_PIN_MAP(0, 6)
+#define FAULTn_BADGE				NRF_GPIO_PIN_MAP(0, 28)
+#define FAULTn_JACDAC				NRF_GPIO_PIN_MAP(0, 29)
+#define BADGE_DATA_3P3				NRF_GPIO_PIN_MAP(0, 14)
+#define BADGE_PWR_ENABLEn			NRF_GPIO_PIN_MAP(1, 8)
+#define JACDAC_PWR_ENABLEn			NRF_GPIO_PIN_MAP(1, 15)
+
+#define WAKE_UP						NRF_GPIO_PIN_MAP(1, 10)
+#define ACC_INT1					NRF_GPIO_PIN_MAP(1, 1)
+
+#define XTRA						NRF_GPIO_PIN_MAP(0, 8)
+
+#define LED_1	LED_BLUE	//for legacy code
+#define LED_2	LED_GREEN	//for legacy code
+	
+
+#endif
+	
+	
+#ifndef SMART_JERSEY_REV_E
 #define LED_1          NRF_GPIO_PIN_MAP(0,13)
 #define LED_2          NRF_GPIO_PIN_MAP(0,14)
+#endif
+
 #define LED_3          NRF_GPIO_PIN_MAP(0,15)
 #define LED_4          NRF_GPIO_PIN_MAP(0,16)
 #define LED_START      LED_1
@@ -84,12 +117,17 @@ extern "C" {
 #define BSP_BUTTON_2   BUTTON_3
 #define BSP_BUTTON_3   BUTTON_4
 
-#define RX_PIN_NUMBER  8
-#define TX_PIN_NUMBER  6
 #define CTS_PIN_NUMBER 7
+	
+#ifndef SMART_JERSEY_REV_E
 #define RTS_PIN_NUMBER 5
+#define TX_PIN_NUMBER  6
+#define RX_PIN_NUMBER  8
+#endif
+
 #define HWFC           true
 
+	
 #define BSP_QSPI_SCK_PIN   19
 #define BSP_QSPI_CSN_PIN   17
 #define BSP_QSPI_IO0_PIN   20
@@ -101,11 +139,19 @@ extern "C" {
 // serialization APPLICATION board - temp. setup for running serialized MEMU tests
 #define SER_APP_RX_PIN              NRF_GPIO_PIN_MAP(1,13)    // UART RX pin number.
 #define SER_APP_TX_PIN              NRF_GPIO_PIN_MAP(1,14)    // UART TX pin number.
+
+#ifndef SMART_JERSEY_REV_E
 #define SER_APP_CTS_PIN             NRF_GPIO_PIN_MAP(0,2)     // UART Clear To Send pin number.
 #define SER_APP_RTS_PIN             NRF_GPIO_PIN_MAP(1,15)    // UART Request To Send pin number.
+#endif
+
 
 #define SER_APP_SPIM0_SCK_PIN       NRF_GPIO_PIN_MAP(0,27)     // SPI clock GPIO pin number.
+	
+#ifndef SMART_JERSEY_REV_E
 #define SER_APP_SPIM0_MOSI_PIN      NRF_GPIO_PIN_MAP(0,2)      // SPI Master Out Slave In GPIO pin number
+#endif
+
 #define SER_APP_SPIM0_MISO_PIN      NRF_GPIO_PIN_MAP(0,26)     // SPI Master In Slave Out GPIO pin number
 #define SER_APP_SPIM0_SS_PIN        NRF_GPIO_PIN_MAP(1,13)     // SPI Slave Select GPIO pin number
 #define SER_APP_SPIM0_RDY_PIN       NRF_GPIO_PIN_MAP(1,15)     // SPI READY GPIO pin number
@@ -115,23 +161,40 @@ extern "C" {
 #define SER_CON_RX_PIN              NRF_GPIO_PIN_MAP(1,14)    // UART RX pin number.
 #define SER_CON_TX_PIN              NRF_GPIO_PIN_MAP(1,13)    // UART TX pin number.
 #define SER_CON_CTS_PIN             NRF_GPIO_PIN_MAP(1,15)    // UART Clear To Send pin number. Not used if HWFC is set to false.
-#define SER_CON_RTS_PIN             NRF_GPIO_PIN_MAP(0,2)     // UART Request To Send pin number. Not used if HWFC is set to false.
 
+#ifndef SMART_JERSEY_REV_E
+#define SER_CON_RTS_PIN             NRF_GPIO_PIN_MAP(0,2)     // UART Request To Send pin number. Not used if HWFC is set to false.
+#endif 
 
 #define SER_CON_SPIS_SCK_PIN        NRF_GPIO_PIN_MAP(0,27)    // SPI SCK signal.
+
+#ifndef SMART_JERSEY_REV_E
 #define SER_CON_SPIS_MOSI_PIN       NRF_GPIO_PIN_MAP(0,2)     // SPI MOSI signal.
+#endif
+
 #define SER_CON_SPIS_MISO_PIN       NRF_GPIO_PIN_MAP(0,26)    // SPI MISO signal.
 #define SER_CON_SPIS_CSN_PIN        NRF_GPIO_PIN_MAP(1,13)    // SPI CSN signal.
+	
+#ifndef SMART_JERSEY_REV_E
 #define SER_CON_SPIS_RDY_PIN        NRF_GPIO_PIN_MAP(1,15)    // SPI READY GPIO pin number.
+#endif
+
 #define SER_CON_SPIS_REQ_PIN        NRF_GPIO_PIN_MAP(1,14)    // SPI REQUEST GPIO pin number.
 
+#ifndef SMART_JERSEY_REV_E
 #define SER_CONN_CHIP_RESET_PIN     NRF_GPIO_PIN_MAP(1,1)    // Pin used to reset connectivity chip
+#endif
 
+	
 // Arduino board mappings
 #define ARDUINO_SCL_PIN             27    // SCL signal pin
 #define ARDUINO_SDA_PIN             26    // SDA signal pin
+	
+#ifndef SMART_JERSEY_REV_E
 #define ARDUINO_AREF_PIN            2     // Aref pin
+#endif 
 
+#ifndef SMART_JERSEY_REV_E
 #define ARDUINO_13_PIN              NRF_GPIO_PIN_MAP(1, 15)  // Digital pin 13
 #define ARDUINO_12_PIN              NRF_GPIO_PIN_MAP(1, 14)  // Digital pin 12
 #define ARDUINO_11_PIN              NRF_GPIO_PIN_MAP(1, 13)  // Digital pin 11
@@ -154,6 +217,9 @@ extern "C" {
 #define ARDUINO_A3_PIN              29    // Analog channel 3
 #define ARDUINO_A4_PIN              30    // Analog channel 4
 #define ARDUINO_A5_PIN              31    // Analog channel 5
+#endif
+
+
 
 
 #ifdef __cplusplus

@@ -1006,6 +1006,22 @@ void twi_init(void)
 	nrf_drv_twi_enable(&m_twi);
 }
 
+
+void SmartJerseyGPIOInit(void)
+{
+#ifdef SMART_JERSEY_REV_E
+	nrf_gpio_cfg_output(LED_BLUE);
+	nrf_gpio_pin_clear(LED_BLUE);
+
+	//nrf_gpio_cfg_output(EN_5P0);
+	//nrf_gpio_pin_set(EN_5P0);
+
+	//nrf_gpio_cfg_output(BADGE_PWR_ENABLEn);
+	//nrf_gpio_pin_set(BADGE_PWR_ENABLEn);
+#endif
+
+}
+
 /**@brief Function for application main entry.
  */
 int main(void)
@@ -1026,8 +1042,9 @@ int main(void)
     conn_params_init();
     peer_manager_init();
 
-    twi_init();
-    
+    twi_init(); 
+    SmartJerseyGPIOInit();
+
 
     // Start execution.
     NRF_LOG_INFO("Heart Rate Sensor example started.");
