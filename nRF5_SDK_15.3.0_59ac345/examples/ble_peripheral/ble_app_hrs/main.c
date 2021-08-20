@@ -1098,6 +1098,7 @@ int main(void)
     twi_init(); 
     SmartJerseyGPIOInit();
     LIS3DH_set_mode();
+    i2s_init();
 
     // Start execution.
     NRF_LOG_INFO("Heart Rate Sensor example started.");
