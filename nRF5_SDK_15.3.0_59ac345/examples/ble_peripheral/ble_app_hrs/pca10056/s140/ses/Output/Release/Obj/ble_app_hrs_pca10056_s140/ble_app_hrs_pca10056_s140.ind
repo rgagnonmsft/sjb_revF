@@ -42,6 +42,8 @@
 "Output/Release/Obj/ble_app_hrs_pca10056_s140/nrfx_rng.o"
 "Output/Release/Obj/ble_app_hrs_pca10056_s140/nrfx_uart.o"
 "Output/Release/Obj/ble_app_hrs_pca10056_s140/nrfx_uarte.o"
+"Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_drv_twi.o"
+"Output/Release/Obj/ble_app_hrs_pca10056_s140/nrfx_twim.o"
 "Output/Release/Obj/ble_app_hrs_pca10056_s140/boards.o"
 "Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_log_backend_rtt.o"
 "Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_log_backend_serial.o"

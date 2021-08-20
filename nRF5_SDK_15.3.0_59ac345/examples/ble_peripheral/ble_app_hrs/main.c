@@ -76,13 +76,14 @@
 #include "nrf_ble_qwr.h"
 #include "ble_conn_state.h"
 #include "nrf_pwr_mgmt.h"
+#include "nrf_drv_twi.h"
 
 #include "nrf_log.h"
 #include "nrf_log_ctrl.h"
 #include "nrf_log_default_backends.h"
 
 
-#define DEVICE_NAME                         "Nordic_HRM"                            /**< Name of device. Will be included in the advertising data. */
+#define DEVICE_NAME                         "SmartJerseyRevF"                            /**< Name of device. Will be included in the advertising data. */
 #define MANUFACTURER_NAME                   "NordicSemiconductor"                   /**< Manufacturer. Will be passed to Device Information Service. */
 #define APP_ADV_INTERVAL                    300                                     /**< The advertising interval (in units of 0.625 ms. This value corresponds to 187.5 ms). */
 
@@ -129,6 +130,27 @@
 #define SEC_PARAM_MAX_KEY_SIZE              16                                      /**< Maximum encryption key size. */
 
 #define DEAD_BEEF                           0xDEADBEEF                              /**< Value used as error code on stack dump, can be used to identify stack location on stack unwind. */
+
+//TWI STUFF------------
+
+#define TWI_INSTANCE_ID     0
+#define LM75B_ADDR          (0x90U >> 1)
+#define LM75B_REG_TEMP      0x00U
+#define LM75B_REG_CONF      0x01U
+#define LM75B_REG_THYST     0x02U
+#define LM75B_REG_TOS       0x03U
+#define NORMAL_MODE 0U
+
+/* Indicates if operation on TWI has ended. */
+static volatile bool m_xfer_done = false;
+
+/* TWI instance. */
+static const nrf_drv_twi_t m_twi = NRF_DRV_TWI_INSTANCE(TWI_INSTANCE_ID);
+
+/* Buffer for samples read from temperature sensor. */
+static uint8_t m_sample;
+
+//------------------------
 
 
 BLE_HRS_DEF(m_hrs);                                                 /**< Heart rate service instance. */
@@ -945,6 +967,44 @@ static void idle_state_handle(void)
     }
 }
 
+__STATIC_INLINE void data_handler(uint8_t temp)
+{
+    NRF_LOG_INFO("Temperature: %d Celsius degrees.", temp);
+}
+
+void twi_handler(nrf_drv_twi_evt_t const * p_event, void * p_context)
+{
+    switch (p_event->type)
+    {
+        case NRF_DRV_TWI_EVT_DONE:
+            if (p_event->xfer_desc.type == NRF_DRV_TWI_XFER_RX)
+            {
+                data_handler(m_sample);
+            }
+            m_xfer_done = true;
+            break;
+        default:
+            break;
+    }
+}
+
+void twi_init(void)
+{
+	ret_code_t err_code;
+
+	const nrf_drv_twi_config_t twi_lm75b_config = {
+		.scl = ARDUINO_SCL_PIN,
+		.sda = ARDUINO_SDA_PIN,
+		.frequency = NRF_DRV_TWI_FREQ_100K,
+		.interrupt_priority = APP_IRQ_PRIORITY_HIGH,
+		.clear_bus_init = false
+	};
+
+	err_code = nrf_drv_twi_init(&m_twi, &twi_lm75b_config, twi_handler, NULL);
+	APP_ERROR_CHECK(err_code);
+
+	nrf_drv_twi_enable(&m_twi);
+}
 
 /**@brief Function for application main entry.
  */
@@ -965,6 +1025,9 @@ int main(void)
     sensor_simulator_init();
     conn_params_init();
     peer_manager_init();
+
+    twi_init();
+    
 
     // Start execution.
     NRF_LOG_INFO("Heart Rate Sensor example started.");
