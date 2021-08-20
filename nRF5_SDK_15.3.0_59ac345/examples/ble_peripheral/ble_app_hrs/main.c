@@ -140,6 +140,16 @@
 #define LM75B_REG_THYST     0x02U
 #define LM75B_REG_TOS       0x03U
 #define NORMAL_MODE 0U
+#define LIS3DH_WHO_AM_I     0x0FU
+#define LIS3DH_OUT_X_L      0x28U
+#define LIS3DH_OUT_X_H      0x29U
+#define LIS3DH_OUT_Y_L      0x2AU
+#define LIS3DH_OUT_Y_H      0x2BU
+#define LIS3DH_OUT_Z_L      0x2CU
+#define LIS3DH_OUT_Z_H      0x2DU
+#define LIS3DH_CTRL_REG4    0x23U
+#define LIS3DH_CTRL_REG1    0x20U
+
 
 /* Indicates if operation on TWI has ended. */
 static volatile bool m_xfer_done = false;
@@ -1022,6 +1032,49 @@ void SmartJerseyGPIOInit(void)
 
 }
 
+
+
+int count = 0;
+ret_code_t err_code_readbyte;
+uint8_t reg_readbyte[1] = { LIS3DH_OUT_Z_L };
+
+void LIS3DH_read_one_byte()
+{
+	
+	
+	m_xfer_done = false;
+	err_code_readbyte = nrf_drv_twi_tx(&m_twi, LM75B_ADDR, reg_readbyte, 1, true);
+	while (!m_xfer_done) ;
+	m_xfer_done = false;
+	err_code_readbyte = nrf_drv_twi_rx(&m_twi, LM75B_ADDR, &m_sample, sizeof(m_sample));
+	while (!m_xfer_done) ;
+	if (err_code_readbyte == NRFX_SUCCESS)
+	{
+		NRF_LOG_INFO("%d", m_sample);
+		
+	}
+	
+}
+
+uint8_t reg_set_mode[2] = { LIS3DH_CTRL_REG1, 0xE4U }; //0xE4 puts it in 50Hz, high-res/normal mode with all axes enabled
+
+
+void LIS3DH_set_mode(void)
+{
+	m_xfer_done = false;
+	err_code_readbyte = nrf_drv_twi_tx(&m_twi, LM75B_ADDR, reg_set_mode, 2, false);
+	while (!m_xfer_done) ;
+	//m_xfer_done = false;
+	//err_code_readbyte = nrf_drv_twi_tx(&m_twi, LM75B_ADDR, &m_sample, sizeof(m_sample));
+	//while (!m_xfer_done) ;
+	if (err_code_readbyte == NRFX_SUCCESS)
+	{
+		NRF_LOG_INFO("%d", m_sample);
+		
+	}
+}
+
+
 /**@brief Function for application main entry.
  */
 int main(void)
@@ -1044,7 +1097,7 @@ int main(void)
 
     twi_init(); 
     SmartJerseyGPIOInit();
-
+    LIS3DH_set_mode();
 
     // Start execution.
     NRF_LOG_INFO("Heart Rate Sensor example started.");
