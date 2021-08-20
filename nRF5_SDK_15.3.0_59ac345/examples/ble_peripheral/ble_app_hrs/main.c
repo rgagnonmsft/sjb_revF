@@ -1099,6 +1099,7 @@ int main(void)
     SmartJerseyGPIOInit();
     LIS3DH_set_mode();
     i2s_init();
+    neopixelWrite();
 
     // Start execution.
     NRF_LOG_INFO("Heart Rate Sensor example started.");
