@@ -14,6 +14,7 @@
   <ProjectSessionItem path="ble_app_hrs_pca10056_s140"/>
   <ProjectSessionItem path="ble_app_hrs_pca10056_s140;ble_app_hrs_pca10056_s140"/>
   <ProjectSessionItem path="ble_app_hrs_pca10056_s140;ble_app_hrs_pca10056_s140;Application"/>
+  <ProjectSessionItem path="ble_app_hrs_pca10056_s140;ble_app_hrs_pca10056_s140;nRF_Drivers"/>
  </Project>
  <Register1/>
  <Register2/>
@@ -38,7 +39,19 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="0" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="2" y="84" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="55" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="29" y="120" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/nrf_drv_twi.h" selected="0" top="73" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="21" y="1471" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="1442" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="216" useTextEdit="1" openedFrom="C:/Users/regagnon/HWLAB/BrookdaleV2/firmware/segger/nRF5SDK153059ac345/nRF5_SDK_15.3.0_59ac345/modules/nrfx/drivers/src/nrfx_i2s.c" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/apply_old_config.h" selected="0" top="190" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="31" y="178" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/nrf_drv_twi.c" selected="0" top="135" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="22" y="42" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/src/nrfx_twim.c" selected="0" top="26" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="78" y="197" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../components/boards/pca10056.h" selected="0" top="128" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="49" y="160" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../i2sHelpers.c" selected="0" top="0" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="72" y="78" useTextEdit="1" openedFrom="C:/Users/regagnon/HWLAB/BrookdaleV2/firmware/segger/nRF5SDK153059ac345/nRF5_SDK_15.3.0_59ac345/examples/ble_peripheral/ble_app_hrs/i2sHelpers.c" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/nrf_drv_i2s.h" selected="0" top="52" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="28" y="42" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/src/nrfx_i2s.c" selected="0" top="18" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="71" y="120" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/include/nrfx_i2s.h" selected="0" top="94" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="8" y="71" useTextEdit="1" openedFrom="C:/Users/regagnon/HWLAB/BrookdaleV2/firmware/segger/nRF5SDK153059ac345/nRF5_SDK_15.3.0_59ac345/modules/nrfx/drivers/src/nrfx_i2s.c" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/nrfx_common.h" selected="0" top="45" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="28" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../i2sHelpers.h" selected="1" top="0" codecName="Default"/>
  </Files>
- <ARMCrossStudioWindow activeProject="ble_app_hrs_pca10056_s140" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
+ <ARMCrossStudioWindow activeProject="ble_app_hrs_pca10056_s140" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="C:/Users/regagnon/HWLAB/BrookdaleV2/firmware/segger/nRF5SDK153059ac345/nRF5_SDK_15.3.0_59ac345/modules/nrfx/drivers/include" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>

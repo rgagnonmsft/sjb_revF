@@ -18684,7 +18684,7 @@ LOAD linker stubs
  .debug_line    0x000000000003bc40      0xa34 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_ble.o
  .debug_line    0x000000000003c674      0x661 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_soc.o
 
-.debug_info     0x0000000000000000    0x7403c
+.debug_info     0x0000000000000000    0x7403d
  .debug_info    0x0000000000000000       0x22 Output/Release/Obj/ble_app_hrs_pca10056_s140/thumb_crt0.o
  .debug_info    0x0000000000000022     0x1170 Output/Release/Obj/ble_app_hrs_pca10056_s140/bsp.o
  .debug_info    0x0000000000001192     0x1e4d Output/Release/Obj/ble_app_hrs_pca10056_s140/bsp_btn_ble.o
@@ -18731,43 +18731,43 @@ LOAD linker stubs
  .debug_info    0x000000000002e235      0xe58 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_crypto_ecdh.o
  .debug_info    0x000000000002f08d      0x273 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_crypto_init.o
  .debug_info    0x000000000002f300      0xc85 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_crypto_rng.o
- .debug_info    0x000000000002ff85     0x6ae8 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_info    0x0000000000036a6d      0xe58 Output/Release/Obj/ble_app_hrs_pca10056_s140/i2sHelpers.o
- .debug_info    0x00000000000378c5       0x23 Output/Release/Obj/ble_app_hrs_pca10056_s140/ses_startup_nrf52840.o
- .debug_info    0x00000000000378e8       0x23 Output/Release/Obj/ble_app_hrs_pca10056_s140/ses_startup_nrf_common.o
- .debug_info    0x000000000003790b     0x148d Output/Release/Obj/ble_app_hrs_pca10056_s140/system_nrf52840.o
- .debug_info    0x0000000000038d98     0x1919 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecc.o
- .debug_info    0x000000000003a6b1      0xa86 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecdh.o
- .debug_info    0x000000000003b137      0x3f5 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_init.o
- .debug_info    0x000000000003b52c       0xb2 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_mutex.o
- .debug_info    0x000000000003b5de      0x915 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_rng.o
- .debug_info    0x000000000003bef3      0x4f8 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_shared.o
- .debug_info    0x000000000003c3eb      0x82c Output/Release/Obj/ble_app_hrs_pca10056_s140/auth_status_tracker.o
- .debug_info    0x000000000003cc17     0x1ab8 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_advdata.o
- .debug_info    0x000000000003e6cf     0x2fe2 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_advertising.o
- .debug_info    0x00000000000416b1     0x292f Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_conn_params.o
- .debug_info    0x0000000000043fe0     0x28d5 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_conn_state.o
- .debug_info    0x00000000000468b5      0xc6c Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_srv_common.o
- .debug_info    0x0000000000047521     0x3c37 Output/Release/Obj/ble_app_hrs_pca10056_s140/gatt_cache_manager.o
- .debug_info    0x000000000004b158     0x15ad Output/Release/Obj/ble_app_hrs_pca10056_s140/gatts_cache_manager.o
- .debug_info    0x000000000004c705     0x3a0c Output/Release/Obj/ble_app_hrs_pca10056_s140/id_manager.o
- .debug_info    0x0000000000050111     0x2916 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_gatt.o
- .debug_info    0x0000000000052a27     0x34e1 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_lesc.o
- .debug_info    0x0000000000055f08     0x2089 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_qwr.o
- .debug_info    0x0000000000057f91     0x1ec5 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_data_storage.o
- .debug_info    0x0000000000059e56     0x1b43 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_database.o
- .debug_info    0x000000000005b999      0x66e Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_id.o
- .debug_info    0x000000000005c007     0x4167 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_manager.o
- .debug_info    0x000000000006016e     0x2ab7 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_manager_handler.o
- .debug_info    0x0000000000062c25      0x508 Output/Release/Obj/ble_app_hrs_pca10056_s140/pm_buffer.o
- .debug_info    0x000000000006312d     0x3f45 Output/Release/Obj/ble_app_hrs_pca10056_s140/security_dispatcher.o
- .debug_info    0x0000000000067072     0x2e18 Output/Release/Obj/ble_app_hrs_pca10056_s140/security_manager.o
- .debug_info    0x0000000000069e8a     0x28cc Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_bas.o
- .debug_info    0x000000000006c756      0xc82 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_dis.o
- .debug_info    0x000000000006d3d8     0x28c3 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_hrs.o
- .debug_info    0x000000000006fc9b     0x1233 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh.o
- .debug_info    0x0000000000070ece     0x2ba7 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_ble.o
- .debug_info    0x0000000000073a75      0x5c7 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_soc.o
+ .debug_info    0x000000000002ff85     0x6ae9 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_info    0x0000000000036a6e      0xe58 Output/Release/Obj/ble_app_hrs_pca10056_s140/i2sHelpers.o
+ .debug_info    0x00000000000378c6       0x23 Output/Release/Obj/ble_app_hrs_pca10056_s140/ses_startup_nrf52840.o
+ .debug_info    0x00000000000378e9       0x23 Output/Release/Obj/ble_app_hrs_pca10056_s140/ses_startup_nrf_common.o
+ .debug_info    0x000000000003790c     0x148d Output/Release/Obj/ble_app_hrs_pca10056_s140/system_nrf52840.o
+ .debug_info    0x0000000000038d99     0x1919 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecc.o
+ .debug_info    0x000000000003a6b2      0xa86 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecdh.o
+ .debug_info    0x000000000003b138      0x3f5 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_init.o
+ .debug_info    0x000000000003b52d       0xb2 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_mutex.o
+ .debug_info    0x000000000003b5df      0x915 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_rng.o
+ .debug_info    0x000000000003bef4      0x4f8 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_shared.o
+ .debug_info    0x000000000003c3ec      0x82c Output/Release/Obj/ble_app_hrs_pca10056_s140/auth_status_tracker.o
+ .debug_info    0x000000000003cc18     0x1ab8 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_advdata.o
+ .debug_info    0x000000000003e6d0     0x2fe2 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_advertising.o
+ .debug_info    0x00000000000416b2     0x292f Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_conn_params.o
+ .debug_info    0x0000000000043fe1     0x28d5 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_conn_state.o
+ .debug_info    0x00000000000468b6      0xc6c Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_srv_common.o
+ .debug_info    0x0000000000047522     0x3c37 Output/Release/Obj/ble_app_hrs_pca10056_s140/gatt_cache_manager.o
+ .debug_info    0x000000000004b159     0x15ad Output/Release/Obj/ble_app_hrs_pca10056_s140/gatts_cache_manager.o
+ .debug_info    0x000000000004c706     0x3a0c Output/Release/Obj/ble_app_hrs_pca10056_s140/id_manager.o
+ .debug_info    0x0000000000050112     0x2916 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_gatt.o
+ .debug_info    0x0000000000052a28     0x34e1 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_lesc.o
+ .debug_info    0x0000000000055f09     0x2089 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_qwr.o
+ .debug_info    0x0000000000057f92     0x1ec5 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_data_storage.o
+ .debug_info    0x0000000000059e57     0x1b43 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_database.o
+ .debug_info    0x000000000005b99a      0x66e Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_id.o
+ .debug_info    0x000000000005c008     0x4167 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_manager.o
+ .debug_info    0x000000000006016f     0x2ab7 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_manager_handler.o
+ .debug_info    0x0000000000062c26      0x508 Output/Release/Obj/ble_app_hrs_pca10056_s140/pm_buffer.o
+ .debug_info    0x000000000006312e     0x3f45 Output/Release/Obj/ble_app_hrs_pca10056_s140/security_dispatcher.o
+ .debug_info    0x0000000000067073     0x2e18 Output/Release/Obj/ble_app_hrs_pca10056_s140/security_manager.o
+ .debug_info    0x0000000000069e8b     0x28cc Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_bas.o
+ .debug_info    0x000000000006c757      0xc82 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_dis.o
+ .debug_info    0x000000000006d3d9     0x28c3 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_hrs.o
+ .debug_info    0x000000000006fc9c     0x1233 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh.o
+ .debug_info    0x0000000000070ecf     0x2ba7 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_ble.o
+ .debug_info    0x0000000000073a76      0x5c7 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_soc.o
 
 .debug_abbrev   0x0000000000000000    0x111f5
  .debug_abbrev  0x0000000000000000       0x12 Output/Release/Obj/ble_app_hrs_pca10056_s140/thumb_crt0.o
@@ -19757,7 +19757,7 @@ LOAD linker stubs
  .debug_pubtypes
                 0x000000000001c30a      0x210 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_soc.o
 
-.debug_macro    0x0000000000000000    0x2812e
+.debug_macro    0x0000000000000000    0x28130
  .debug_macro   0x0000000000000000      0x2a0 Output/Release/Obj/ble_app_hrs_pca10056_s140/bsp.o
  .debug_macro   0x00000000000002a0      0xade Output/Release/Obj/ble_app_hrs_pca10056_s140/bsp.o
  .debug_macro   0x0000000000000d7e      0x1a3 Output/Release/Obj/ble_app_hrs_pca10056_s140/bsp.o
@@ -19939,70 +19939,70 @@ LOAD linker stubs
  .debug_macro   0x000000000002101a      0x298 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_crypto_rng.o
  .debug_macro   0x00000000000212b2       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_crypto_rng.o
  .debug_macro   0x00000000000212c2       0x1c Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_crypto_rng.o
- .debug_macro   0x00000000000212de      0x6bf Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x000000000002199d       0x22 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x00000000000219bf      0x343 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021d02       0x6a Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021d6c       0x16 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021d82       0x3a Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021dbc       0x16 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021dd2       0x22 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021df4       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021e04       0x88 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021e8c       0x42 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021ece       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021ede       0x16 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021ef4       0x1c Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021f10       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021f20       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021f30       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
- .debug_macro   0x0000000000021f40      0x371 Output/Release/Obj/ble_app_hrs_pca10056_s140/i2sHelpers.o
- .debug_macro   0x00000000000222b1       0x3a Output/Release/Obj/ble_app_hrs_pca10056_s140/i2sHelpers.o
- .debug_macro   0x00000000000222eb       0x46 Output/Release/Obj/ble_app_hrs_pca10056_s140/i2sHelpers.o
- .debug_macro   0x0000000000022331       0xa8 Output/Release/Obj/ble_app_hrs_pca10056_s140/system_nrf52840.o
- .debug_macro   0x00000000000223d9      0x322 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecc.o
- .debug_macro   0x00000000000226fb       0x1f Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecc.o
- .debug_macro   0x000000000002271a       0xe0 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecc.o
- .debug_macro   0x00000000000227fa       0x5e Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecc.o
- .debug_macro   0x0000000000022858      0x372 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecdh.o
- .debug_macro   0x0000000000022bca      0x260 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_init.o
- .debug_macro   0x0000000000022e2a      0x192 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_mutex.o
- .debug_macro   0x0000000000022fbc      0x261 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_rng.o
- .debug_macro   0x000000000002321d      0x247 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_shared.o
- .debug_macro   0x0000000000023464      0x2f3 Output/Release/Obj/ble_app_hrs_pca10056_s140/auth_status_tracker.o
- .debug_macro   0x0000000000023757      0x173 Output/Release/Obj/ble_app_hrs_pca10056_s140/auth_status_tracker.o
- .debug_macro   0x00000000000238ca      0x20f Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_advdata.o
- .debug_macro   0x0000000000023ad9      0x290 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_advertising.o
- .debug_macro   0x0000000000023d69      0x280 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_conn_params.o
- .debug_macro   0x0000000000023fe9       0x40 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_conn_params.o
- .debug_macro   0x0000000000024029      0x282 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_conn_state.o
- .debug_macro   0x00000000000242ab      0x1c5 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_srv_common.o
- .debug_macro   0x0000000000024470      0x368 Output/Release/Obj/ble_app_hrs_pca10056_s140/gatt_cache_manager.o
- .debug_macro   0x00000000000247d8       0x3a Output/Release/Obj/ble_app_hrs_pca10056_s140/gatt_cache_manager.o
- .debug_macro   0x0000000000024812       0x16 Output/Release/Obj/ble_app_hrs_pca10056_s140/gatt_cache_manager.o
- .debug_macro   0x0000000000024828      0x344 Output/Release/Obj/ble_app_hrs_pca10056_s140/gatts_cache_manager.o
- .debug_macro   0x0000000000024b6c      0x359 Output/Release/Obj/ble_app_hrs_pca10056_s140/id_manager.o
- .debug_macro   0x0000000000024ec5      0x241 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_gatt.o
- .debug_macro   0x0000000000025106       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_gatt.o
- .debug_macro   0x0000000000025116      0x6c4 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_lesc.o
- .debug_macro   0x00000000000257da       0x62 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_lesc.o
- .debug_macro   0x000000000002583c      0x202 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_qwr.o
- .debug_macro   0x0000000000025a3e       0x16 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_qwr.o
- .debug_macro   0x0000000000025a54      0x336 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_data_storage.o
- .debug_macro   0x0000000000025d8a       0x34 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_data_storage.o
- .debug_macro   0x0000000000025dbe      0x344 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_database.o
- .debug_macro   0x0000000000026102       0x3c Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_database.o
- .debug_macro   0x000000000002613e       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_database.o
- .debug_macro   0x000000000002614e      0x24f Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_id.o
- .debug_macro   0x000000000002639d      0x3ab Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_manager.o
- .debug_macro   0x0000000000026748      0x36b Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_manager_handler.o
- .debug_macro   0x0000000000026ab3      0x16b Output/Release/Obj/ble_app_hrs_pca10056_s140/pm_buffer.o
- .debug_macro   0x0000000000026c1e      0x35b Output/Release/Obj/ble_app_hrs_pca10056_s140/security_dispatcher.o
- .debug_macro   0x0000000000026f79      0x35c Output/Release/Obj/ble_app_hrs_pca10056_s140/security_manager.o
- .debug_macro   0x00000000000272d5      0x298 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_bas.o
- .debug_macro   0x000000000002756d      0x220 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_dis.o
- .debug_macro   0x000000000002778d       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_dis.o
- .debug_macro   0x000000000002779d      0x25d Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_hrs.o
- .debug_macro   0x00000000000279fa      0x266 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh.o
- .debug_macro   0x0000000000027c60      0x291 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_ble.o
- .debug_macro   0x0000000000027ef1      0x23d Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_soc.o
+ .debug_macro   0x00000000000212de      0x6c1 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x000000000002199f       0x22 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x00000000000219c1      0x343 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021d04       0x6a Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021d6e       0x16 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021d84       0x3a Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021dbe       0x16 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021dd4       0x22 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021df6       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021e06       0x88 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021e8e       0x42 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021ed0       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021ee0       0x16 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021ef6       0x1c Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021f12       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021f22       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021f32       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/main.o
+ .debug_macro   0x0000000000021f42      0x371 Output/Release/Obj/ble_app_hrs_pca10056_s140/i2sHelpers.o
+ .debug_macro   0x00000000000222b3       0x3a Output/Release/Obj/ble_app_hrs_pca10056_s140/i2sHelpers.o
+ .debug_macro   0x00000000000222ed       0x46 Output/Release/Obj/ble_app_hrs_pca10056_s140/i2sHelpers.o
+ .debug_macro   0x0000000000022333       0xa8 Output/Release/Obj/ble_app_hrs_pca10056_s140/system_nrf52840.o
+ .debug_macro   0x00000000000223db      0x322 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecc.o
+ .debug_macro   0x00000000000226fd       0x1f Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecc.o
+ .debug_macro   0x000000000002271c       0xe0 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecc.o
+ .debug_macro   0x00000000000227fc       0x5e Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecc.o
+ .debug_macro   0x000000000002285a      0x372 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_ecdh.o
+ .debug_macro   0x0000000000022bcc      0x260 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_init.o
+ .debug_macro   0x0000000000022e2c      0x192 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_mutex.o
+ .debug_macro   0x0000000000022fbe      0x261 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_rng.o
+ .debug_macro   0x000000000002321f      0x247 Output/Release/Obj/ble_app_hrs_pca10056_s140/cc310_backend_shared.o
+ .debug_macro   0x0000000000023466      0x2f3 Output/Release/Obj/ble_app_hrs_pca10056_s140/auth_status_tracker.o
+ .debug_macro   0x0000000000023759      0x173 Output/Release/Obj/ble_app_hrs_pca10056_s140/auth_status_tracker.o
+ .debug_macro   0x00000000000238cc      0x20f Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_advdata.o
+ .debug_macro   0x0000000000023adb      0x290 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_advertising.o
+ .debug_macro   0x0000000000023d6b      0x280 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_conn_params.o
+ .debug_macro   0x0000000000023feb       0x40 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_conn_params.o
+ .debug_macro   0x000000000002402b      0x282 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_conn_state.o
+ .debug_macro   0x00000000000242ad      0x1c5 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_srv_common.o
+ .debug_macro   0x0000000000024472      0x368 Output/Release/Obj/ble_app_hrs_pca10056_s140/gatt_cache_manager.o
+ .debug_macro   0x00000000000247da       0x3a Output/Release/Obj/ble_app_hrs_pca10056_s140/gatt_cache_manager.o
+ .debug_macro   0x0000000000024814       0x16 Output/Release/Obj/ble_app_hrs_pca10056_s140/gatt_cache_manager.o
+ .debug_macro   0x000000000002482a      0x344 Output/Release/Obj/ble_app_hrs_pca10056_s140/gatts_cache_manager.o
+ .debug_macro   0x0000000000024b6e      0x359 Output/Release/Obj/ble_app_hrs_pca10056_s140/id_manager.o
+ .debug_macro   0x0000000000024ec7      0x241 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_gatt.o
+ .debug_macro   0x0000000000025108       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_gatt.o
+ .debug_macro   0x0000000000025118      0x6c4 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_lesc.o
+ .debug_macro   0x00000000000257dc       0x62 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_lesc.o
+ .debug_macro   0x000000000002583e      0x202 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_qwr.o
+ .debug_macro   0x0000000000025a40       0x16 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_ble_qwr.o
+ .debug_macro   0x0000000000025a56      0x336 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_data_storage.o
+ .debug_macro   0x0000000000025d8c       0x34 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_data_storage.o
+ .debug_macro   0x0000000000025dc0      0x344 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_database.o
+ .debug_macro   0x0000000000026104       0x3c Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_database.o
+ .debug_macro   0x0000000000026140       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_database.o
+ .debug_macro   0x0000000000026150      0x24f Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_id.o
+ .debug_macro   0x000000000002639f      0x3ab Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_manager.o
+ .debug_macro   0x000000000002674a      0x36b Output/Release/Obj/ble_app_hrs_pca10056_s140/peer_manager_handler.o
+ .debug_macro   0x0000000000026ab5      0x16b Output/Release/Obj/ble_app_hrs_pca10056_s140/pm_buffer.o
+ .debug_macro   0x0000000000026c20      0x35b Output/Release/Obj/ble_app_hrs_pca10056_s140/security_dispatcher.o
+ .debug_macro   0x0000000000026f7b      0x35c Output/Release/Obj/ble_app_hrs_pca10056_s140/security_manager.o
+ .debug_macro   0x00000000000272d7      0x298 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_bas.o
+ .debug_macro   0x000000000002756f      0x220 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_dis.o
+ .debug_macro   0x000000000002778f       0x10 Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_dis.o
+ .debug_macro   0x000000000002779f      0x25d Output/Release/Obj/ble_app_hrs_pca10056_s140/ble_hrs.o
+ .debug_macro   0x00000000000279fc      0x266 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh.o
+ .debug_macro   0x0000000000027c62      0x291 Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_ble.o
+ .debug_macro   0x0000000000027ef3      0x23d Output/Release/Obj/ble_app_hrs_pca10056_s140/nrf_sdh_soc.o
