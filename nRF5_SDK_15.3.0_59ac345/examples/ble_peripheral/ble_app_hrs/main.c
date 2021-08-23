@@ -1025,11 +1025,11 @@ void SmartJerseyGPIOInit(void)
 	nrf_gpio_cfg_output(LED_BLUE);
 	nrf_gpio_pin_clear(LED_BLUE);
 
-	//nrf_gpio_cfg_output(EN_5P0);
-	//nrf_gpio_pin_set(EN_5P0);
+	nrf_gpio_cfg_output(EN_5P0);
+	nrf_gpio_pin_set(EN_5P0);
 
-	//nrf_gpio_cfg_output(BADGE_PWR_ENABLEn);
-	//nrf_gpio_pin_set(BADGE_PWR_ENABLEn);
+	nrf_gpio_cfg_output(BADGE_PWR_ENABLEn);
+	nrf_gpio_pin_set(BADGE_PWR_ENABLEn);
 #endif
 
 }

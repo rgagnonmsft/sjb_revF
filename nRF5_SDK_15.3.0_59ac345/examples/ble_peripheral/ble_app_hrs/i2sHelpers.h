@@ -55,7 +55,7 @@ static uint32_t       * volatile mp_block_to_fill  = NULL;
 static uint32_t const * volatile mp_block_to_check = NULL;
 
 #define I2S_SDIN_PIN 11 //not necessary for smart jersey- using i2s out only
-#define I2S_SDOUT_PIN BADGE_DATA_3P3 //for smart jersey
+#define I2S_SDOUT_PIN LED_DATA_3P3 //for smart jersey
 
 //Neopixel specific:
 #define RESET_BITS 6

@@ -84,6 +84,7 @@ extern "C" {
 #define LED_2          NRF_GPIO_PIN_MAP(0,14)
 #endif
 
+#define LED_DATA_3P3   NRF_GPIO_PIN_MAP(0,15)
 #define LED_3          NRF_GPIO_PIN_MAP(0,15)
 #define LED_4          NRF_GPIO_PIN_MAP(0,16)
 #define LED_START      LED_1
