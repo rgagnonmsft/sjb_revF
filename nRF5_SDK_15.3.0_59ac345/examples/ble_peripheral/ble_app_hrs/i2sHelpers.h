@@ -9,7 +9,7 @@
 //#include "nrf_log_ctrl.h"
 //#include "nrf_log_default_backends.h"
 
-
+#include "pca10056.h"
 
 
 static void prepare_tx_data(uint32_t * p_block);
@@ -72,6 +72,6 @@ typedef struct
 
 LEDDRIVERPIXEL	*m_pPixels;
 uint32_t *m_pTXBuffer;
-uint16_t m_numPixels = 3;
+uint16_t m_numPixels = 5;
 uint8_t	m_brightness;
 uint16_t m_i2sBufferSize;

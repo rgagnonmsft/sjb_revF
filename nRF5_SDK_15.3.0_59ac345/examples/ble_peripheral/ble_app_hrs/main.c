@@ -1018,6 +1018,7 @@ void twi_init(void)
 	nrf_drv_twi_enable(&m_twi);
 }
 
+#define SMART_JERSEY_REV_E
 
 void SmartJerseyGPIOInit(void)
 {
@@ -1028,8 +1029,12 @@ void SmartJerseyGPIOInit(void)
 	nrf_gpio_cfg_output(EN_5P0);
 	nrf_gpio_pin_set(EN_5P0);
 
+
+
 	nrf_gpio_cfg_output(BADGE_PWR_ENABLEn);
-	nrf_gpio_pin_set(BADGE_PWR_ENABLEn);
+	nrf_gpio_pin_clear(BADGE_PWR_ENABLEn);
+
+
 #endif
 
 }
@@ -1097,20 +1102,27 @@ int main(void)
     conn_params_init();
     peer_manager_init();
 
-    twi_init(); 
+
+    //twi_init(); 
     SmartJerseyGPIOInit();
-    LIS3DH_set_mode();
-    i2s_init();
-    neopixelWrite();
+    //LIS3DH_set_mode();
+    //i2s_init();
+    //neopixelWrite();
 
     // Start execution.
     NRF_LOG_INFO("Heart Rate Sensor example started.");
     application_timers_start();
     advertising_start(erase_bonds);
 
+    nrf_gpio_cfg_output(BADGE_DATA_3P3);
+    nrf_gpio_cfg_output(LED_DATA_3P3);
+    nrf_gpio_pin_set(BADGE_DATA_3P3);
+    nrf_gpio_pin_set(LED_DATA_3P3);
     // Enter main loop.
     for (;;)
     {
+        
+
         idle_state_handle();
     }
 }

@@ -77,4 +77,5 @@ Output/Release/Obj/ble_app_hrs_pca10056_s140/i2sHelpers.o: \
  C\:/Program\ Files/SEGGER/SEGGER\ Embedded\ Studio\ for\ ARM\ 5.50d/include/stdlib.h \
  ../../../../../../components/libraries/balloc/nrf_balloc.h \
  ../../../../../../components/libraries/log/nrf_log_default_backends.h \
- C\:\Users\regagnon\HWLAB\BrookdaleV2\firmware\segger\nRF5SDK153059ac345\nRF5_SDK_15.3.0_59ac345\examples\ble_peripheral\ble_app_hrs\i2sHelpers.h
+ C\:\Users\regagnon\HWLAB\BrookdaleV2\firmware\segger\nRF5SDK153059ac345\nRF5_SDK_15.3.0_59ac345\examples\ble_peripheral\ble_app_hrs\i2sHelpers.h \
+ ../../../../../../components/boards/pca10056.h

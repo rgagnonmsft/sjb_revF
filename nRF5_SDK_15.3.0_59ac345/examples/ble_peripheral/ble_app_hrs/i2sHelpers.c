@@ -362,6 +362,13 @@ void FillI2SDriverBuffer(void)
 	}
 }
 
+
+void delayMicroseconds(uint32_t us)
+{
+        nrf_delay_us(us);
+}
+
+
 void neopixelWrite() 
 {
   m_i2sBufferSize = 3 * m_numPixels + RESET_BITS;
@@ -373,5 +380,7 @@ void neopixelWrite()
   buffers.p_tx_buffer = (uint32_t *) m_pTXBuffer;	
 
   nrf_drv_i2s_start(&buffers, m_i2sBufferSize, 0);
+  delayMicroseconds((m_numPixels + 20) * (24 * 5 / 4));	
+  nrf_drv_i2s_stop();
 
 }

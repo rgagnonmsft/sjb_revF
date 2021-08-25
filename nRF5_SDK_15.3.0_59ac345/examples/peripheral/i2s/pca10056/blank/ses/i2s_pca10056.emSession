@@ -39,10 +39,10 @@
   <Watches active="0" update="Never"/>
  </Watch4>
  <Files>
-  <SessionOpenFile windowGroup="DockEditLeft" x="24" y="271" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="0" top="255" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="0" y="237" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../../../main.c" selected="1" top="141" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="54" y="78" useTextEdit="1" openedFrom="C:/Users/regagnon/HWLAB/BrookdaleV2/firmware/segger/nRF5SDK153059ac345/nRF5_SDK_15.3.0_59ac345/examples/peripheral/i2s/main.c" useBinaryEdit="0" left="0" path="../../../../../../integration/nrfx/legacy/nrf_drv_i2s.h" selected="0" top="60" codecName="Default"/>
   <SessionOpenFile windowGroup="DockEditLeft" x="36" y="288" useTextEdit="1" openedFrom="C:/Users/regagnon/HWLAB/BrookdaleV2/firmware/segger/nRF5SDK153059ac345/nRF5_SDK_15.3.0_59ac345/integration/nrfx/legacy/nrf_drv_i2s.h" useBinaryEdit="0" left="0" path="../../../../../../modules/nrfx/drivers/src/nrfx_i2s.c" selected="0" top="272" codecName="Default"/>
-  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="366" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="1" top="350" codecName="Default"/>
+  <SessionOpenFile windowGroup="DockEditLeft" x="23" y="366" useTextEdit="1" openedFrom="" useBinaryEdit="0" left="0" path="../config/sdk_config.h" selected="0" top="350" codecName="Default"/>
  </Files>
  <ARMCrossStudioWindow activeProject="i2s_pca10056" fileDialogDefaultFilter="*.c;*.cpp;*.cxx;*.cc;*.h;*.hpp;*.hxx" autoConnectTarget="J-Link" buildConfiguration="Release" sessionSettings="" debugSearchFileMap="" fileDialogInitialDirectory="" debugSearchPath="" autoConnectCapabilities="3199"/>
 </session>
